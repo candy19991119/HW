@@ -8,18 +8,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 <style>
 .Bg {background:url(images/bg.jpg);}
-
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+.textWeight {font-weight:900;}
 .navBg {background:url(images/menu_bg.jpg) no-repeat;background-size:cover;}
 .navCenter {display:flex;justify-content:center;}
 
+.mainBg {background:url(images/con-bg.jpg) no-repeat;background-size:cover;}
 .mainImg {float:left;margin-right:10px;}
+.mainTitle {font-size:25px;margin:0px;}
+.mainTitle1_2 {padding-left:150px;}
+.mainTitle2_2 {padding-left:200px;}
+.mainTitle3_2 {padding-left:230px;}
 .mainText {font-size:12px}
 
 </style>
 </head>
 <body class="w-100 h-100 Bg">
     <div class="container w-100 h-100">
-        <h1 class="ps-2">TENPLATE002</h1>
+        <h1 class="ps-5 textWeight">template002</h1>
         <!--nav-->
         <!--navbar-expand-lg 顯示導覽列選項文字-->
         <nav class="navbar navbar-expand-lg navbar-dark border border-5 rounded border-white navBg"> 
@@ -57,7 +64,7 @@
             </div>
         </nav>
         <!--main-->
-        <div class="container border border-3 rounded border-white bg-light mt-3">
+        <div class="container border border-3 rounded border-white my-3 mainBg">
             <!--幻燈片-->
             <!--carousel slide 圖片滑動效果 data-bs-ride="carousel" 圖片自動變換(預設5秒)-->
             <div id="carouselExampleControls" class="carousel slide mt-3" data-bs-ride="carousel">
@@ -89,26 +96,78 @@
             </div>
             <!--中間內容-->
             <div class="row mx-1 my-3">
-                <div class="col border border-3">
-                    <p>Small Company Title Here</p>
-                    <img src="images/pic1.jpg" class="mainImg"/>
+                <div class="col">
+                    <p class="text-danger textWeight mainTitle">Small Company Title Here</p>
+                    <img src="images/pic1.jpg" class="mainImg img-thumbnail"/>
                     <p class="mainText">Nam vestibulum gravida dignissim. Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et iaculis fringilla, lorem ipsum mattis tellus, a laoreet sem sapien id lacus.  </p>
 					<p class="mainText">Nunc porttitor leo eget turpis tempor bibendum. Morbi eu nisi vitae lacus </p>
-					<a style="float:right;" href="#">read more</a>
+					<a style="float:right;"  class="text-danger textWeight" href="#">read more</a>
                     
                 </div>
-                <div class="col border border-3">
-                    <p>Small Company Title Here</p>
-                    <img src="images/pic2.jpg" class="mainImg"/> 
+                <div class="col">
+                    <p class="text-danger textWeight mainTitle">Small Company Title Here</p>
+                    <img src="images/pic2.jpg" class="mainImg img-thumbnail"/> 
                     <p class="mainText">Nunc porttitor leo eget turpis tempor bibendum. Morbi eu nisi vitae lacus blandit tincidunt eu ut turpis. Aliquam erat volutpat.</p>
 					<p class="mainText">Nam vestibulum gravida dignissim. Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et </p>
-					<a style="float:right;" href="#">read more</a>
+					<a style="float:right;" class="text-danger textWeight" href="#">read more</a>
                 </div>
 
             </div>
             <!--下方內容-->
+            <p class="ms-5 text-danger textWeight mainTitle">Our Services</p>
+            <div class="row mx-1 my-3">
+                <div class="col border border-5 rounded border-secondary">
+                    <img src="images/pic3.jpg" class="m-3 mainImg"/>
+                    <p class="text-danger textWeight mainTitle">creative</p>
+                    <p class="text-danger textWeight mainTitle mainTitle1_2">ideas</p>
+                    <p class="mainText">Nam vestibulum gravida dignissim. Quisque consequat egestas diam non dictum. Maecenas tristique, </p>
+					<a href="#" class="text-danger textWeight">read more</a>
+                    
+                    <a href="#" class="text-danger textWeight">Nunc porttitor leo eget turpis tempor.</a>
+                    <p class="mainText">Morbi eu nisi vitae lacus blandit tincidunt eu ut turpis. Aliquam erat volutpat.</p>
+					<a href="#" class="text-danger textWeight">Nam vestibulum gravida dignissim.</a>
+                    <p class="mainText">Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et iaculis fringilla, lorem</p>
+                </div>
+                <div class="col border border-5 rounded  border-secondary mx-2">
+                    <img src="images/pic4.jpg" class="m-3 mainImg"/>
+                    <p class="text-danger textWeight  mainTitle">Our</p>
+					<p class="text-danger textWeight  mainTitle mainTitle2_2">Services</p>
+					<p class="mainText">Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et iaculis fringilla, lorem </p>
+					<a href="#" class="text-danger textWeight">read more</a>
+
+                    <a href="#" class="text-danger textWeight">05-11-2012</a>
+					<a href="#" class="text-danger textWeight">Lorem ipsum dolor sit amet. </a>
+                    <p class="mainText">Consectetur adipiscing elit. Aliquam in sapien lorem. Morbi faucibus sit amet at leo</p>
+					<p class="mainText">Donec sollicitudin nulla porta quam adipiscing nec suscipit sapien mattis. Fusce dignissim, elit </p>
+                </div>
+                <div class="col border border-5 rounded  border-secondary">
+                    <img src="images/pic5.jpg" class="m-4 mainImg"/>
+                    <p class="text-danger textWeight  mainTitle">Future</p>
+					<p class="text-danger textWeight  mainTitle mainTitle3_2">plans</p>
+					<p class="mainText">Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et iaculis fringilla, lorem </p>
+					<a href="#" class="text-danger textWeight">read more</a>
+
+                    <a href="#" class="text-danger textWeight">Phasellus interdum eleifend </a>
+                    <p class="mainText">Nunc porttitor leo eget turpis tempor bibendum. Morbi eu nisi vitae tincidunt eu ut turpis.</p>
+					<a href="#" class="text-danger textWeight">Duis nec turpis eu diam</a>
+                    <p class="mainText">Quisque consequat egestas diam non dictum. Maecenas tristique, turpis et iaculis fringilla, lorem</p>
+                </div>
+
+            </div>
         </div>
-        
+        <!--footer-->
+        <footer class="row">
+            <div class="col">
+                <span style="float:left;" class="text-white">Copyright 2012 Your Company name Here.</span>
+            </div>
+            <div class="col">
+                <span style="float:right;" class="text-white">
+                    <a href="#" class="text-danger">Website Design</a> 
+                    by
+                    <a href="#" class="text-danger">Free Design Textures</a>
+                </span>
+            </div>
+        </footer>
     </div>   
     
     
