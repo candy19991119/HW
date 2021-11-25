@@ -102,12 +102,6 @@
             text-align:right;
             margin-left:20px;
         }
-
-        .inputBorder {
-            border-radius: 10px;
-            border: solid 1.5px #69605B;
-        }
-        
         .btnPersonalFile{
             width:100px;
             height:30px;
@@ -121,6 +115,20 @@
             text-align: center;
             height: 50px;
             line-height: 50px;
+        }
+
+        .workDisplay{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .work{
+            width:200px;
+            height:200px;
+            margin:5px;
+            border-radius: 10px;
+            border:1px solid  #69605B;
         }
     </style>
 </head>
@@ -204,100 +212,28 @@
             <div class="col-9 p-4">
                 <div class="row">
                     <div class="col">
-                        <span class="display-6">個人資料</span>
+                        <span class="display-6">我的作品</span>
                     </div>
-                </div>
-                <div class="row mt-2 mb-1">
-                    <div class="col-3 inputTxt">
-                        <span>*使用者名稱: &nbsp</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>*使用者自介: &nbsp</span>
-                    </div>
-                    <div class="col-9 cotainer-fluid">
-                        <textarea  class="inputBorder container-fluid" ></textarea>
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>*E-mail: &nbsp</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>*職業: &nbsp</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>*生日: &nbsp</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="date"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>*所在地: &nbsp</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>外部連結</span>
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>IG:</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>FB:</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>Twitter:</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-2">
-                    <div class="col-3 inputTxt">
-                        <span>其他:</span>
-                    </div>
-                    <div class="col-9">
-                        <input type="text"  class="inputBorder container-fluid">
-                    </div>
-                </div>
-                <div class="row my-5">
                     <div class="col inputTxt">
-                        <button class="btnPersonalFile">取消</button>
-                        <button class="btnPersonalFile" style="margin-right:70px;">確定更改</button>
+                        <button class="btnPersonalFile">編輯作品</button>
+                        <button class="btnPersonalFile" style="margin-right:70px;">新增作品</button>
                     </div>
                 </div>
+                <div class="workDisplay">
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                    <div class="work"></div>
+                </div>
+                
             </div>
         </div>
     </div>
