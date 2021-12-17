@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            border: 0px;
+            outline: none;
+            font-family: arial, "Microsoft JhengHei", sans-serif !important;
+            color: #938280;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: #FFF1E9;
+        }
+
+        .LOGO {
+            width: 150px;
+            height: 150px;
+        }
+
+        .btnDropdown {
+            border-radius: 30px;
+        }
+
+        .navRight {
+            flex-direction: row-reverse;
+            position: absolute;
+            right: 50px;
+        }
+
+        .col3 {
+            background-color: #D6CECB;
+        }
+
+        .containerRounded {
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .userImg {
+            width: 150px;
+            height: 150px;
+            border: solid 2px #69605B;
+            border-radius: 80px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .textColor {
+            display: block;
+            margin: 10px 0px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #938280;
+        }
+
+        .textRight {
+            text-align: right;
+        }
+
+        .spanColor {
+            color: #938280;
+        }
+
+        .btnStyle {
+            text-align: right;
+        }
+
+        .myWorks {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .smallUser {
+            width: 25px;
+            height: 25px;
+            display: block;
+            margin: 0px 20px;
+            opacity: 0.5;
+        }
+
+        /*圖片區塊*/
+        .imgArea {
+            height: 350px;
+            opacity: 0.8;
+            background-image: url("Images/about us.jpg");
+            background-size: cover;
+        }
+
+        .txtAboutUs {
+            font-size: 60px;
+            color: #FFF;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .txtArticle {
+            text-align: center;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+
+        .txtContent {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .hopeArea {
+            box-shadow: 6px 6px 5px #cccccc;
+        }
+
+        .bottomImgArea {
+            border: 1px solid #000;
+            border-radius: 10px;
+            width: 280px;
+            height: 250px;
+            background-image: url("Images/bottom Img.jpg");
+            background-size: cover;
+            margin: 10px 0px 10px 0px;
+
+        }
+
+        /*footer*/
+        .footer {
+            background-color: #B1A39A;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/LOGO.png" class="LOGO" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navRight" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">作品集</a>
+                    <a class="nav-link" href="#">聯絡我們</a>
+                    <a class="nav-link" href="#">關於我們</a>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle btnDropdown" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            個人頁面
+                        </button>
+                        <ul class="dropdown-menu btnDropdown" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">資料編輯</a></li>
+                            <li><a class="dropdown-item" href="#">設定</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">登出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row imgArea">
+            <div class="col-12" style="text-align:center;">
+                <br />
+                <br />
+                <br />
+                <span class="txtAboutUs">關於我們</span>
+                <br />
+                <span style="color:#FFF;">帶您更加了解 TDS portfolios</span>
+                <br />
+                <span style="color:#FFF;">帶著您們 Show youselves.Find yourselves.</span>
+            </div>
+        </div>
+        <div class="row">
+            <span class="txtArticle my-5">展現創作平台</span>
+            <div class="txtContent mb-3">
+                提供展示個人專題及作品集的網站平台
+            </div>
+        </div>
+        <div class="row bg-light rounded mx-4 rounded-5 hopeArea">
+            <div class="col-12 col-md-3 bottomImgArea m-3"></div>
+            <div class="col-12 col-md-6 my-4">
+                我們希望...
+                <br />
+                <br />
+                專案目標:
+                <br />
+                幫助學生整合作品、提供瀏覽者良好的閱讀體驗、提供企業尋找優秀的設計師
+                <br />
+                <br />
+                目標客群:
+                <br />
+                製作專題的學生、一般群眾、對設計有興趣的瀏覽者、設計相關企業
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footerBg mt-5 footer">
+        <span class="text-light">copyright 2021 TDS All Rights Reserved</span>
+    </footer>
+
+
+</body>
+
+</html>

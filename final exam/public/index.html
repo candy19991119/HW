@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>新增作品</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-size: 16px;
+            border: 0px;
+            outline: none;
+            font-family: arial, "Microsoft JhengHei", sans-serif !important;
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: #FFF1E9;
+        }
+        
+        .LOGO {
+            width: 150px;
+            height: 150px;
+        }
+        
+        .btnDropdown {
+            padding: 0px 25px;
+            border-radius: 30px;
+            background-color: #CDBAB4;
+        }
+        
+        .navRight {
+            flex-direction: row-reverse;
+            position: absolute;
+            right: 50px;
+        }
+        
+        .displayText {
+            font-size: 80px;
+            font-weight: bold;
+            color: #9A8880;
+            padding-left: 10%;
+            margin-top: 20%;
+        }
+        
+        .smallText {
+            display: block;
+            color: #9A8880;
+            padding-left: 10%;
+        }
+        
+        .footer {
+            background-color: #9A8880;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+            position: absolute;
+            bottom: -10px;
+        }
+        
+        .imgSize {
+            width: 25%;
+        }
+    </style>
+    <script type="text/javascript">
+        $('.multiple-items').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Images/LOGO.png" class="LOGO" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navRight" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">作品集</a>
+                    <a class="nav-link" href="#">聯絡我們</a>
+                    <a class="nav-link" href="#">關於我們</a>
+                    <button class="btn btnDropdown" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        登入
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-12 col-md-4 col-xl-4 mb-2">
+            <span class="displayText">WORKS</span>
+            <span class="smallText">Find some special things.</span>
+        </div>
+        <div class="col-12 col-md-12 col-xl-8">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/carousel_image1.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image2.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image3.PNG" class="mx-2 imgSize">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/carousel_image1.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image2.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image3.PNG" class="mx-2 imgSize">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/carousel_image1.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image2.PNG" class="mx-2 imgSize">
+                        <img src="Images/carousel_image3.PNG" class="mx-2 imgSize">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid footerBg mt-5 footerTxt footer">
+        <span class="text-light">copyright 2021 TDS All Rights Reserved</span>
+    </footer>
+
+</body>
+
+</html>
